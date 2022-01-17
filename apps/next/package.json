@@ -2,12 +2,7 @@
   "main": "index.js",
   "dependencies": {
     "@expo-nextjs-turborepo/packages": "*",
-    "expo": "^44.0.0",
-    "next": "9.3.5",
-    "react": "17.0.1",
-    "react-dom": "17.0.1",
-    "react-native": "0.64.3",
-    "react-native-web": "0.17.1"
+    "next": "9.3.5"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
@@ -17,12 +12,11 @@
     "typescript": "^4.5.4"
   },
   "scripts": {
-    "dev:android": "expo start --android",
-    "dev:ios": "expo start --ios",
-    "dev:web": "expo start --web",
-    "eject": "expo eject"
+    "start": "next dev",
+    "dev": "next dev",
+    "build": "next build"
   },
   "version": "1.0.0",
   "private": true,
-  "name": "@expo-nextjs-turborepo/expo"
+  "name": "@expo-nextjs-turborepo/next"
 }

@@ -1,9 +1,4 @@
-import { Text, View } from "react-native";
-
+import { StartPage } from "../../packages/ui/pages/StartPage";
 export default function App() {
-  return (
-    <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-      <Text>Hello World</Text>
-    </View>
-  );
+  return <StartPage />;
 }
