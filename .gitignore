@@ -4,6 +4,6 @@
 # build
 build/**
 dist/**
-.next/**
-.expo/**
+.next
+.expo
 node_modules
