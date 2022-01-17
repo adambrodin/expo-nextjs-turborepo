@@ -1,0 +1,46 @@
+{
+  "name": "expo-nextjs-turborepo",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "author": {
+    "name": "Adam Brodin",
+    "email": "adambrodindeveloper@gmail.com"
+  },
+  "repository": {
+    "url": "https://github.com/adambrodin/expo-nextjs-turborepo",
+    "type": "git"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "clear && turbo run dev --parallel",
+    "dev:android": "clear && turbo run dev:android --parallel",
+    "build": "turbo run build --parallel",
+    "rebuild": "rimraf ./**/*/node_modules && yarn install"
+  },
+  "devDependencies": {
+    "turbo": "^1.0.28",
+    "rimraf": "3.0.2"
+  },
+  "turbo": {
+    "baseBranch": "origin/main",
+    "pipeline": {
+      "build": {
+        "dependsOn": [
+          "^build"
+        ],
+        "outputs": [
+          ".dist/**",
+          ".next/**"
+        ]
+      },
+      "dev": {
+        "cache": false
+      },
+      "dev:android": {}
+    }
+  }
+}

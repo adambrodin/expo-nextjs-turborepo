@@ -1,0 +1,9 @@
+# turborepo
+.turbo
+
+# build
+build/**
+dist/**
+.next/**
+.expo/**
+node_modules
