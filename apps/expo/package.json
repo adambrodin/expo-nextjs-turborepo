@@ -3,7 +3,6 @@
   "dependencies": {
     "packages": "*",
     "expo": "^44.0.0",
-    "next": "9.3.5",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-native": "0.64.3",
@@ -11,7 +10,6 @@
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
-    "@expo/next-adapter": "~2.1.52",
     "@types/react": "^17.0.38",
     "@types/react-native": "~0.64.12",
     "typescript": "^4.5.4"
