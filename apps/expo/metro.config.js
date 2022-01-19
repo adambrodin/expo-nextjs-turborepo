@@ -1,18 +1,17 @@
-const { getDefaultConfig } = require("expo/metro-config");
-const path = require("path");
+const { getDefaultConfig } = require('expo/metro-config')
+const findWorkspaceRoot = require('find-yarn-workspace-root')
 
-// Find the workspace root, this can be replaced with `find-yarn-workspace-root`
-const workspaceRoot = path.resolve(__dirname, "../..");
-const projectRoot = __dirname;
+const path = require('path')
 
-const config = getDefaultConfig(projectRoot);
+const workspaceRoot = findWorkspaceRoot(__dirname)
+const projectRoot = __dirname
 
-// 1. Watch all files within the monorepo
-config.watchFolders = [workspaceRoot];
-// 2. Let Metro know where to resolve packages, and in what order
+const config = getDefaultConfig(projectRoot)
+
+config.watchFolders = [workspaceRoot]
 config.resolver.nodeModulesPath = [
-  path.resolve(projectRoot, "node_modules"),
-  path.resolve(workspaceRoot, "node_modules"),
-];
+  path.resolve(projectRoot, 'node_modules'),
+  path.resolve(workspaceRoot, 'node_modules'),
+]
 
-module.exports = config;
+module.exports = config

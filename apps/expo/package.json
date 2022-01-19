@@ -1,8 +1,9 @@
 {
   "main": "index.js",
   "dependencies": {
-    "packages": "*",
     "expo": "^44.0.0",
+    "find-yarn-workspace-root": "^2.0.0",
+    "packages": "*",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-native": "0.64.3",
