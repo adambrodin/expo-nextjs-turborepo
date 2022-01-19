@@ -20,6 +20,7 @@
     "dev:android": "clear && turbo run dev:android --parallel",
     "build": "turbo run build --parallel",
     "rebuild": "rimraf ./**/*/node_modules && yarn install",
+    "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
@@ -42,7 +43,8 @@
       "dev": {
         "cache": false
       },
-      "dev:android": {}
+      "dev:android": {},
+      "lint": {}
     }
   }
 }
