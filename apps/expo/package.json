@@ -17,7 +17,6 @@
   "scripts": {
     "dev:android": "expo start --android",
     "dev:ios": "expo start --ios",
-    "dev:web": "expo start --web",
     "eject": "expo eject"
   },
   "version": "1.0.0",
