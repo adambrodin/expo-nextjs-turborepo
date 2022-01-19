@@ -19,11 +19,13 @@
     "dev": "clear && turbo run dev --parallel",
     "dev:android": "clear && turbo run dev:android --parallel",
     "build": "turbo run build --parallel",
-    "rebuild": "rimraf ./**/*/node_modules && yarn install"
+    "rebuild": "rimraf ./**/*/node_modules && yarn install",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
+    "rimraf": "3.0.2",
     "turbo": "^1.0.28",
-    "rimraf": "3.0.2"
+    "prettier": "^2.5.1"
   },
   "turbo": {
     "baseBranch": "origin/main",
