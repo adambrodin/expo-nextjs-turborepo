@@ -16,7 +16,8 @@
     "noEmit": true,
     "esModuleInterop": true,
     "moduleResolution": "node",
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "incremental": true
   },
   "include": [
     "next-env.d.ts",
