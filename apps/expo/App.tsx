@@ -1,4 +1,4 @@
-import { StartPage } from '../../packages/ui/pages/StartPage'
+import { StartScreen } from '../../packages/ui/screens/StartScreen'
 export default function App() {
-  return <StartPage />
+  return <StartScreen />
 }

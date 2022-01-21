@@ -2,7 +2,7 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 
-export function StartPage() {
+export function StartScreen() {
   return (
     <View style={styles.container}>
       <Text style={styles.text}>Expo + Next.JS = ❤️</Text>
