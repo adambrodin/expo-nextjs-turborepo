@@ -46,7 +46,9 @@
       "dev": {
         "cache": false
       },
-      "dev:android": {},
+      "dev:android": {
+        "cache": false
+      },
       "lint": {}
     }
   },
