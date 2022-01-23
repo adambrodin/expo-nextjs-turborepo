@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 const { getDefaultConfig } = require('expo/metro-config')
 const findWorkspaceRoot = require('find-yarn-workspace-root')
 

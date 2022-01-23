@@ -1,3 +1,4 @@
+/* eslint-disable import/no-anonymous-default-export */
 import { ConfigContext, ExpoConfig } from '@expo/config'
 
 export default ({ config }: ConfigContext): ExpoConfig => ({
