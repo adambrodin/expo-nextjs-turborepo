@@ -1,13 +1,13 @@
 // @generated: @expo/next-adapter@2.1.52
-import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import React from 'react';
+import { StyleSheet, Text, View } from 'react-native';
 
 export function StartScreen() {
   return (
     <View style={styles.container}>
       <Text style={styles.text}>Expo + Next.JS = ❤️</Text>
     </View>
-  )
+  );
 }
 
 const styles = StyleSheet.create({
@@ -21,4 +21,4 @@ const styles = StyleSheet.create({
     fontSize: 18,
     color: 'white',
   },
-})
+});

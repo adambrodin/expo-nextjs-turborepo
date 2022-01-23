@@ -1,5 +1,5 @@
 /* eslint-disable import/no-anonymous-default-export */
-import { ConfigContext, ExpoConfig } from '@expo/config'
+import { ConfigContext, ExpoConfig } from '@expo/config';
 
 export default ({ config }: ConfigContext): ExpoConfig => ({
   ...config,
@@ -7,4 +7,4 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
   slug: 'expo-nextjs-turborepo',
   description:
     'A template/boilerplate Turborepo with React Native & NextJS via Expo.',
-})
+});
