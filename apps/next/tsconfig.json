@@ -5,7 +5,6 @@
     "module": "esnext",
     "target": "ES5",
     "lib": ["dom", "dom.iterable", "esnext"],
-    "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true
   },
