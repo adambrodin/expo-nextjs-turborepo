@@ -19,7 +19,7 @@
     "dev": "clear && turbo run dev --parallel",
     "dev:android": "clear && turbo run dev:android --parallel",
     "build": "turbo run build --parallel",
-    "rebuild": "rimraf ./**/*/node_modules && yarn install",
+    "rebuild": "rimraf ./**/*/{node_modules,.expo,.next,.turbo,dist} && yarn install",
     "lint": "eslint ./**/*{.js,.ts,.tsx}",
     "format": "prettier --write \"**/*.{js,ts,tsx,md}\"",
     "prepare": "husky install"
