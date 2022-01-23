@@ -10,7 +10,9 @@
     "noImplicitAny": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": { "packages/*": ["../*"] }
   },
   "exclude": ["node_modules", "dist"]
 }
