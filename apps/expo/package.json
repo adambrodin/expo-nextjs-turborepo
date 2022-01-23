@@ -1,6 +1,7 @@
 {
   "main": "index.js",
   "dependencies": {
+    "babel-plugin-module-resolver": "^4.1.0",
     "expo": "^44.0.0",
     "find-yarn-workspace-root": "^2.0.0",
     "packages": "*",
