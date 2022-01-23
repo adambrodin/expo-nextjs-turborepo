@@ -1,3 +1,10 @@
 {
-  "extends": "expo/tsconfig.base"
+  "extends": "../../packages/configs/tsconfig.base.json",
+  "compilerOptions": {
+    "jsx": "react-native",
+    "lib": ["DOM", "ESNext"],
+    "moduleResolution": "node",
+    "target": "ESNext"
+  },
+  "exclude": ["node_modules", "babel.config.js", "metro.config.js"]
 }
