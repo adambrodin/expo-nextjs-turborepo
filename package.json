@@ -20,7 +20,7 @@
     "dev:android": "clear && turbo run dev:android --parallel",
     "build": "turbo run build --parallel",
     "rebuild": "rimraf ./**/*/node_modules && yarn install",
-    "lint": "turbo run lint --parallel",
+    "lint": "eslint ./**/*{.js,.ts,.tsx}",
     "format": "prettier --write \"**/*.{js,ts,tsx,md}\"",
     "prepare": "husky install"
   },
@@ -54,13 +54,8 @@
       },
       "dev:android": {
         "cache": false
-      },
-      "lint": {}
+      }
     }
-  },
-  "dependencies": {
-    "eslint-config-next": "^12.0.8",
-    "eslint-config-prettier": "^8.3.0"
   },
   "lint-staged": {
     "*.{js,ts,tsx,md}": "prettier --write"
