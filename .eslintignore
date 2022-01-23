@@ -1,0 +1,5 @@
+.next/
+.expo/
+node_modules/
+dist/
+.turbo/
