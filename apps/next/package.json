@@ -1,15 +1,13 @@
 {
   "main": "index.js",
   "dependencies": {
-    "packages": "*",
-    "next": "~10.2.3"
+    "next": "~10.2.3",
+    "next-compose-plugins": "^2.2.1",
+    "next-transpile-modules": "^7.0.0",
+    "packages": "*"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.9",
-    "@expo/next-adapter": "^3.1.15",
-    "@types/react": "^17.0.38",
-    "@types/react-native": "~0.64.12",
-    "typescript": "^4.5.4"
+    "@expo/next-adapter": "^3.1.15"
   },
   "scripts": {
     "start": "next dev",
