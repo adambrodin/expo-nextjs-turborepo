@@ -1,4 +1,3 @@
-// @generated: @expo/next-adapter@2.1.52
 import { Link } from 'expo-next-react-navigation';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
