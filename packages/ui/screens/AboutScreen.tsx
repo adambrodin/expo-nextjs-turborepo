@@ -15,7 +15,7 @@ export function AboutScreen() {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#6699cc',
+    backgroundColor: '#517aa3',
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
@@ -23,11 +23,16 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 32,
     color: 'white',
+    textAlign: 'center',
   },
   aboutLink: {
+    backgroundColor: 'yellow',
+    fontSize: 20,
+    padding: 4,
+    borderRadius: 5,
     marginTop: 20,
   },
   aboutText: {
-    color: 'yellow',
+    color: 'black',
   },
 });
