@@ -1,6 +1,12 @@
-// eslint-disable-next-line @typescript-eslint/no-var-requires
+/* eslint-disable @typescript-eslint/no-var-requires */
 const { withExpo } = require('@expo/next-adapter');
+const withPlugins = require('next-compose-plugins');
 
-module.exports = withExpo({
-  projectRoot: __dirname + '/../..',
-});
+const withTM = require('next-transpile-modules')([
+  'expo-next-react-navigation',
+]);
+
+module.exports = withPlugins([
+  withTM,
+  [withExpo, { projectRoot: __dirname + '/../..' }],
+]);
