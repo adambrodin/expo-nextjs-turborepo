@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 const { withExpo } = require('@expo/next-adapter');
 const withPlugins = require('next-compose-plugins');
+const findWorkspaceRoot = require('find-yarn-workspace-root');
 
 const withTM = require('next-transpile-modules')([
   'expo-next-react-navigation',
@@ -8,5 +9,5 @@ const withTM = require('next-transpile-modules')([
 
 module.exports = withPlugins([
   withTM,
-  [withExpo, { projectRoot: __dirname + '/../..' }],
+  [withExpo, { projectRoot: findWorkspaceRoot(__dirname) }],
 ]);
