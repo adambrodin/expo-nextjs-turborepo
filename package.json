@@ -40,5 +40,6 @@
   "lint-staged": {
     "*.{js,ts,tsx,md}": "prettier --write",
     "*.{js,ts,tsx}": "eslint . --fix"
-  }
+  },
+  "packageManager": "yarn@1.22.10"
 }
